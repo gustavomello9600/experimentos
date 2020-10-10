@@ -14,7 +14,7 @@
              24 STORE_NAME               4 (cons)
              26 POP_TOP
 
-  4          28 LOAD_CONST               3 (<code object sieve at 0x703e65df50, file "<dis>", line 4>)
+  4          28 LOAD_CONST               3 (<code object sieve at 0x7fdb5d72e240, file "<dis>", line 4>)
              30 LOAD_CONST               4 ('sieve')
              32 MAKE_FUNCTION            0
              34 STORE_NAME               5 (sieve)
@@ -42,7 +42,7 @@
         >>   72 LOAD_CONST               7 (None)
              74 RETURN_VALUE
 
-Disassembly of <code object sieve at 0x703e65df50, file "<dis>", line 4>:
+Disassembly of <code object sieve at 0x7fdb5d72e240, file "<dis>", line 4>:
   5           0 LOAD_GLOBAL              0 (next)
               2 LOAD_FAST                0 (numbers)
               4 CALL_FUNCTION            1
@@ -53,7 +53,7 @@ Disassembly of <code object sieve at 0x703e65df50, file "<dis>", line 4>:
              12 LOAD_GLOBAL              2 (sieve)
              14 LOAD_CLOSURE             0 (p)
              16 BUILD_TUPLE              1
-             18 LOAD_CONST               1 (<code object <genexpr> at 0x703e65dea0, file "<dis>", line 6>)
+             18 LOAD_CONST               1 (<code object <genexpr> at 0x7fdb5d72e190, file "<dis>", line 6>)
              20 LOAD_CONST               2 ('sieve.<locals>.<genexpr>')
              22 MAKE_FUNCTION            8 (closure)
              24 LOAD_FAST                0 (numbers)
@@ -68,7 +68,7 @@ Disassembly of <code object sieve at 0x703e65df50, file "<dis>", line 4>:
              42 LOAD_CONST               0 (None)
              44 RETURN_VALUE
 
-Disassembly of <code object <genexpr> at 0x703e65dea0, file "<dis>", line 6>:
+Disassembly of <code object <genexpr> at 0x7fdb5d72e190, file "<dis>", line 6>:
   6           0 LOAD_FAST                0 (.0)
         >>    2 FOR_ITER                22 (to 26)
               4 STORE_FAST               1 (n)

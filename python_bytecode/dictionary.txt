@@ -1,0 +1,23 @@
+  1           0 LOAD_CONST               0 (1)
+              2 LOAD_CONST               1 (2)
+              4 LOAD_CONST               2 (3)
+              6 LOAD_CONST               3 (('a', 'b', 'c'))
+              8 BUILD_CONST_KEY_MAP      3
+             10 STORE_NAME               0 (d)
+
+  2          12 LOAD_NAME                1 (dict)
+             14 LOAD_CONST               0 (1)
+             16 LOAD_CONST               1 (2)
+             18 LOAD_CONST               2 (3)
+             20 LOAD_CONST               3 (('a', 'b', 'c'))
+             22 CALL_FUNCTION_KW         3
+             24 STORE_NAME               2 (e)
+
+  4          26 LOAD_NAME                3 (print)
+             28 LOAD_NAME                0 (d)
+             30 LOAD_NAME                2 (e)
+             32 COMPARE_OP               2 (==)
+             34 CALL_FUNCTION            1
+             36 POP_TOP
+             38 LOAD_CONST               4 (None)
+             40 RETURN_VALUE
