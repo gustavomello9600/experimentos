@@ -1,0 +1,5 @@
+def sieve( (|p|) :: numbers ) =
+   (|p|)::sieve(filter $ (n -> n % p != 0) <| numbers)
+primes = sieve .. count <| 2
+
+print .. list .. takewhile $ (? < 100) <| primes
