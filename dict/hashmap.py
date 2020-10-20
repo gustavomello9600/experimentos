@@ -158,8 +158,12 @@ class HashMap:
 
 
 hashmap = HashMap("""
-    x => x*x for x in range(1, 80)
+    "a" => 2,
+    "b" => 3,
+     1  => 9,
+    16  => 10
 """)
 
 hashmap.display_internals()
-print(hashmap[25])
+print(hashmap[1])
+print(hashmap[16])
