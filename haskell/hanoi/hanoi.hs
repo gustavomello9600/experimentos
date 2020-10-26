@@ -8,13 +8,20 @@ main = do
   putStrLn $ unlines log
   putStrLn $ "\n" ++ show result
 
-hanoi :: ([[Int]], [String])
-hanoi = solve ([[1, 2, 3, 4, 5, 6], [], []], ["Initial State"])
-        where solve = compose movements
-                where compose = foldr (.) id
-                      movements = zipWith move [1..6] (replicate 6 2)
 
-move :: Int -> Int -> ([[Int]], [String]) -> ([[Int]], [String])
+type StackIndex = Int
+type DiskSize = Int
+
+
+hanoi :: ([[DiskSize]], [String])
+hanoi = solve ([[1, 2, 3, 4, 5, 6], [], []], ["Initial State"])
+  where
+    solve = compose movements
+      where
+        compose = foldr (.) id
+        movements = zipWith move [1..6] (replicate 6 2)
+
+move :: DiskSize -> StackIndex -> ([[DiskSize]], [String]) -> ([[DiskSize]], [String])
 move n targetStackIndex state
     | n /= minimumCurrentStack =
       let newState = move minimumCurrentStack untouchedStackIndex state
